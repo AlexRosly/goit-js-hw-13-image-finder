@@ -5,20 +5,6 @@ import axios from 'axios';
 
 const BASE_URL = `https://pixabay.com/api/`;
 const API_KEY = `22619356-ee7eba8b5a411fda9a95fba73`;
-// const SEARCH_PARAMS = `image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`;
-
-
-// function fetchImage(searchQuery, page, perPage) {
-//     const SEARCH_PARAMS = `image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`;
-//     const url = `${BASE_URL}?key=${API_KEY}&q=${searchQuery}&${SEARCH_PARAMS}`;
-//     return fetch(url).then((response) => {
-//         if (!response.ok) {
-//             throw new Error(response.status);
-//         }
-//         return response.json();
-//     });
-// }
-
 
 async function fetchImage(searchQuery, page, perPage) {
     const SEARCH_PARAMS = `image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`;

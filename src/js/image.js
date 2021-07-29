@@ -76,7 +76,7 @@ function onLoadMore() {
         .catch(Error => {
             
         });
-    var gallery = $('.gallery a').simpleLightbox();
+    let gallery = $('.gallery a').simpleLightbox();
     gallery.refresh();
 }
 
